@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\USER\Documents\GitHub\SQL_project\Spring Project\KSG_spring\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2889943105.index
+701109706.index
+677786934.index
+533339071.index
+3502283459.index
+775513550.index
+3964595560.index

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="airport">
+
+	<select id="main_select" resultType="string">
+	<![CDATA[
+	select distinct 도착공항 from airport2
+	]]>
+	</select>
+	
+	<select id="detail_view" parameterType="string" resultType="hashMap">
+	<![CDATA[				
+	select * from airport2 where 출발공항=#{depart} and 도착공항=#{arrive} and 시작일자 <= #{publeYear} and 종료일자 >= #{publeYear};
+	]]>
+	</select>
+	
+	<!-- 
+	<insert id="sing_up" parameterType="hashMap" >
+	<![CDATA[
+	insert into member values (#{id}, #{password}, #{name}, #{gender}, #{age})
+	]]>
+	</insert>
+	 -->
+	  
+	<insert id="sing_up" parameterType="com.myproject.dto.MemberDto" >
+	<![CDATA[
+	insert into member values (#{id}, #{pw}, #{name}, #{gender}, #{age})
+	]]>
+	</insert> 
+	
+	<select id="login" parameterType="hashmap" resultType="string">
+	<![CDATA[
+	select pw from member where id=#{id}
+	]]>
+	
+	</select>
+	<select id="login_infor" parameterType="string" resultType="com.myproject.dto.MemberDto">
+	<![CDATA[
+	select * from member where id=#{id}
+	]]>
+	</select>
+	
+	
+	<insert id="book_insert" parameterType="com.myproject.dto.BookDto" >
+	<![CDATA[
+	insert into book values (#{id}, #{ticketnum}, #{name}, #{출발공항}, #{출발날짜}, #{출발시간}, #{도착공항}, #{도착시간}, #{운항편명}, #{항공사})
+	]]>
+	</insert> 
+	
+	
+	<select id="ticket_infor" parameterType="string" resultType="com.myproject.dto.TicketDto">
+	<![CDATA[
+	select * from airport2 where ticketnum=#{ticketnum}
+	]]>
+	</select>
+	
+	<select id="myticket_find" parameterType="string" resultType="string">
+	<![CDATA[
+	select * from book where id=#{id}
+	]]>
+	</select>
+	
+	<!-- 중복체크용 -->
+	<select id="checkDuple" parameterType="string" resultType="list">
+	<![CDATA[
+	select id from member where id=#{id}
+	]]>
+	</select>
+	
+	
+</mapper>

@@ -1,0 +1,42 @@
+!SESSION 2022-11-10 20:24:55.410 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file C:\Users\USER\Documents\GitHub\SQL_project\Spring Project\KSG_spring\.metadata\.bak_0.log
+Created Time: 2022-11-10 21:09:46.832
+
+!ENTRY org.eclipse.ui 4 4 2022-11-10 21:09:46.833
+!MESSAGE Could not create action delegate for id: org.springframework.ide.eclipse.beans.ui.editor.actions.refactorPropertyElementAction
+!SUBENTRY 1 org.eclipse.ui 4 0 2022-11-10 21:09:46.833
+!MESSAGE Action must implement IEditorActionDelegate
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-11-10 23:56:11.418
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-11-10 23:56:11.418
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-11-10 23:56:11.419
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-11-10 23:56:14.569
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-11-10 23:56:14.570
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-11-10 23:56:14.571
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-11-10 23:56:16.463
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-11-10 23:56:16.464
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-11-10 23:56:16.465
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT

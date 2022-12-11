@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <script>
+      d3.csv("2022_passenger.csv", function (data) {
+        for (var i = 0; i < data.length; i++) {
+          console.log(data[i]);
+          console.log(data[i].year);
+          console.log(data[i].month);
+          console.log(data[i].from);
+          console.log(data[i].inout);
+          console.log(data[i].count);
+        }
+        d3.select("body")
+          .selectAll("p")
+          .data(data)
+          .enter()
+          .apeend("p")
+          .text(function (d) {
+            return (
+              d.year +
+              ", " +
+              d.month +
+              ", " +
+              d.from +
+              ", " +
+              d.inout +
+              ", " +
+              d.count
+            );
+          });
+      });
+    </script>
+  </body>
+</html>

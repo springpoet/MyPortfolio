@@ -1,0 +1,144 @@
+C:\팀프로젝트\MyPCRoom\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\팀프로젝트\MyPCRoom\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\팀프로젝트\MyPCRoom\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\팀프로젝트\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\팀프로젝트\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\팀프로젝트\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\팀프로젝트\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\팀프로젝트\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\팀프로젝트\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\팀프로젝트\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\팀프로젝트\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
+C:\Users\Seojun\Desktop\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\aa\Desktop\하사안서준\MyPCRoom\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Form5.resources
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Form5.resources
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\aa\Desktop\MyPCRoom_1\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.Form5.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12071404(refresh)\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.Form5.resources
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\Seojun\Desktop\새 폴더\12071436(refresh+)\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form5.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\ksg\12071552\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form5.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form5.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.pdb

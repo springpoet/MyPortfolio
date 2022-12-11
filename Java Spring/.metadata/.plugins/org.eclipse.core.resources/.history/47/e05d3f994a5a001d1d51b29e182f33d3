@@ -1,0 +1,74 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>티켓 main page</h1>
+
+	<select name="depart">
+		<c:forEach var="item" items="${data}">
+			<option value="${item}">
+				<c:choose>
+					<c:when test="${item eq 'GMP' }">
+				김포
+				</c:when>
+					<c:when test="${item eq 'HND' }">
+				일본(하네다)
+				</c:when>
+					<c:when test="${item eq 'PUS' }">
+				부산
+				</c:when>
+					<c:when test="${item eq 'NRT' }">
+				일본(나리타)
+				</c:when>
+					<c:when test="${item eq 'KIX' }">
+				일본(간사이)
+				</c:when>
+					<c:when test="${item eq 'FUK' }">
+				일본(후쿠오카)
+				</c:when>
+					<c:when test="${item eq 'CTS' }">
+				일본(신치토세)
+				</c:when>
+					<c:when test="${item eq 'TAO' }">
+				타오타오
+				</c:when>
+					<c:when test="${item eq 'HKG' }">
+				홍콩
+				</c:when>
+					<c:when test="${item eq 'UBN' }">
+				유비엔
+				</c:when>
+					<c:when test="${item eq 'GUM' }">
+				껌
+				</c:when>
+					<c:when test="${item eq 'SPN' }">
+				스페인
+				</c:when>
+					<c:when test="${item eq 'BKK' }">
+				빅마마
+				</c:when>
+					<c:when test="${item eq 'DAD' }">
+				아빠
+				</c:when>
+					<c:when test="${item eq 'CXR' }">
+				뭐야
+				</c:when>
+				</c:choose>
+			</option>
+
+
+		</c:forEach>
+	</select>
+
+</body>
+</html>
