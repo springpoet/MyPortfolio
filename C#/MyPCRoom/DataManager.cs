@@ -29,11 +29,14 @@ namespace MyPCRoom
                     user.User_id = item["User_id"].ToString();
                     user.Name = item["Name"].ToString();
                     user.Using_status = item["Using_status"].ToString();
+
                     user.Start_time = item["Start_time"].ToString() == "" ?
                        new DateTime() :
                        DateTime.Parse(item["Start_time"].ToString());
+
                     user.Late_time = item["Late_time"].ToString();
                     user.Seat_num = item["Seat_num"].ToString();
+
                     Users.Add(user);
                 }
             }
@@ -43,6 +46,7 @@ namespace MyPCRoom
             }
         }
 
+        //회원 삭제
         public static void delete(string user_id)
         {
             try
@@ -67,11 +71,14 @@ namespace MyPCRoom
                     user.User_id = item["User_id"].ToString();
                     user.Name = item["Name"].ToString();
                     user.Using_status = item["Using_status"].ToString();
+
                     user.Start_time = item["Start_time"].ToString() == "" ?
                        new DateTime() :
                        DateTime.Parse(item["Start_time"].ToString());
+
                     user.Late_time = item["Late_time"].ToString();
                     user.Seat_num = item["Seat_num"].ToString();
+
                     Users.Add(user);
                 }
             }
@@ -92,11 +99,14 @@ namespace MyPCRoom
                     user.User_id = item["User_id"].ToString();
                     user.Name = item["Name"].ToString();
                     user.Using_status = item["Using_status"].ToString();
+
                     user.Start_time = item["Start_time"].ToString() == "" ?
                        new DateTime() :
                        DateTime.Parse(item["Start_time"].ToString());
+
                     user.Late_time = item["Late_time"].ToString();
                     user.Seat_num = item["Seat_num"].ToString();
+
                     Users.Add(user);
                 }
             }

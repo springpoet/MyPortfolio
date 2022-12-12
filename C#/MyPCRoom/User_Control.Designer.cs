@@ -1,6 +1,6 @@
 ﻿namespace MyPCRoom
 {
-    partial class Form3
+    partial class User_Control
     {
         /// <summary>
         /// Required designer variable.
@@ -160,7 +160,7 @@
             this.panel2.Size = new System.Drawing.Size(211, 1);
             this.panel2.TabIndex = 3;
             // 
-            // Form3
+            // User_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,10 +180,10 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form3";
+            this.Name = "User_Control";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "회원등록";
             this.ResumeLayout(false);
             this.PerformLayout();
 

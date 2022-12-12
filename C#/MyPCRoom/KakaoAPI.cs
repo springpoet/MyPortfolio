@@ -30,6 +30,7 @@ namespace MyPCRoom
             StreamReader reader = new StreamReader(stream, Encoding.UTF8);
             string json = reader.ReadToEnd();
 
+            // alt + enter -> using System.Web.Script.Serialization() 선택
             JavaScriptSerializer js = new JavaScriptSerializer();
 
             dynamic dob = js.Deserialize<dynamic>(json);
@@ -44,8 +45,8 @@ namespace MyPCRoom
                 double y = double.Parse(docs[i]["y"]);
                 list.Add(new Locale(lname, y, x));
             }
+
             return list;
         }
-
     }
 }

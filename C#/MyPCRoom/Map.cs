@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace MyPCRoom
 {
-    public partial class Form5 : Form
+    public partial class Map : Form
     {
-        public Form5()
+        public Map()
         {
             InitializeComponent();
-            // button을 누르지 않고 enter치면 바로 검색됨
             textBox1.KeyUp += (sender, e) =>
             {
                 if (e.KeyCode == Keys.Enter)
@@ -44,7 +43,6 @@ namespace MyPCRoom
             // webBrowser 안에 setCenter를 호출한 것
             // pos가 매개변수가 된 것
             hdoc.InvokeScript("setCenter", pos);
-           
         }
     }
 }

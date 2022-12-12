@@ -127,18 +127,100 @@ C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.G
 C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
 C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.exe
 C:\Users\Seojun\Desktop\MyPCRoom_1\12071552\MyPCRoom\obj\Debug\MyPCRoom.pdb
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\bin\Debug\MyPCRoom.exe.config
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\bin\Debug\MyPCRoom.exe
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\bin\Debug\MyPCRoom.pdb
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form5.resources
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.exe
-C:\Users\USER\Documents\GitHub\Big_data_study\Project\C#_project\12081211(설명서 추가)\12071552\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\User\Desktop\12071552\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\User\Desktop\12071552\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\User\Desktop\12071552\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form2.resources
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form3.resources
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form4.resources
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.Form5.resources
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.UserControl1.resources
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.Weather.resources
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\User\Desktop\12071552\MyPCRoom\obj\Debug\MyPCRoom.Internet.resources
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Internet.resources
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.UserControl1.resources
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Weather.resources
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Time_Add.resources
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.User_Control.resources
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.User_Search.resources
+C:\Users\User\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Map.resources
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Time_Add.resources
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.User_Control.resources
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.User_Search.resources
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Map.resources
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Internet.resources
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.UserControl1.resources
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Weather.resources
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\aa\Desktop\12071552_(style)\MyPCRoom\obj\Debug\MyPCRoom.Move_seat.resources
+\\192.168.0.111\shareFolder\하사안서준\중사 안서준\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+\\192.168.0.111\shareFolder\하사안서준\중사 안서준\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+\\192.168.0.111\shareFolder\하사안서준\중사 안서준\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.exe
+\\192.168.0.111\shareFolder\하사안서준\중사 안서준\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Move_seat.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Time_Add.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.User_Control.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.User_Search.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Map.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Internet.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.UserControl1.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Weather.resources
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\Seojun\Desktop\MyPCRoom_1\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.pdb
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\bin\Debug\MyPCRoom.exe.config
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\bin\Debug\MyPCRoom.exe
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\bin\Debug\MyPCRoom.pdb
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.csproj.AssemblyReference.cache
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.csproj.SuggestedBindingRedirects.cache
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Main.resources
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Move_seat.resources
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Time_Add.resources
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.User_Control.resources
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.User_Search.resources
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Map.resources
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Internet.resources
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Properties.Resources.resources
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.UserControl1.resources
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.Weather.resources
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.csproj.GenerateResource.cache
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.csproj.CoreCompileInputs.cache
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.exe
+C:\Users\aa\Desktop\12121007최종일까\MyPCRoom\obj\Debug\MyPCRoom.pdb

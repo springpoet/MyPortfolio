@@ -1,6 +1,6 @@
 ﻿namespace MyPCRoom
 {
-    partial class Form4
+    partial class User_Search
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.useridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usingstatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +38,13 @@
             this.latetimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.seatnumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pCUserBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -87,6 +87,58 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(937, 271);
             this.dataGridView1.TabIndex = 2;
+            // 
+            // useridDataGridViewTextBoxColumn
+            // 
+            this.useridDataGridViewTextBoxColumn.DataPropertyName = "User_id";
+            this.useridDataGridViewTextBoxColumn.HeaderText = "User_id";
+            this.useridDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.useridDataGridViewTextBoxColumn.Name = "useridDataGridViewTextBoxColumn";
+            this.useridDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // usingstatusDataGridViewTextBoxColumn
+            // 
+            this.usingstatusDataGridViewTextBoxColumn.DataPropertyName = "Using_status";
+            this.usingstatusDataGridViewTextBoxColumn.HeaderText = "Using_status";
+            this.usingstatusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.usingstatusDataGridViewTextBoxColumn.Name = "usingstatusDataGridViewTextBoxColumn";
+            this.usingstatusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // starttimeDataGridViewTextBoxColumn
+            // 
+            this.starttimeDataGridViewTextBoxColumn.DataPropertyName = "Start_time";
+            this.starttimeDataGridViewTextBoxColumn.HeaderText = "Start_time";
+            this.starttimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.starttimeDataGridViewTextBoxColumn.Name = "starttimeDataGridViewTextBoxColumn";
+            this.starttimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // latetimeDataGridViewTextBoxColumn
+            // 
+            this.latetimeDataGridViewTextBoxColumn.DataPropertyName = "Late_time";
+            this.latetimeDataGridViewTextBoxColumn.HeaderText = "Late_time";
+            this.latetimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.latetimeDataGridViewTextBoxColumn.Name = "latetimeDataGridViewTextBoxColumn";
+            this.latetimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // seatnumDataGridViewTextBoxColumn
+            // 
+            this.seatnumDataGridViewTextBoxColumn.DataPropertyName = "Seat_num";
+            this.seatnumDataGridViewTextBoxColumn.HeaderText = "Seat_num";
+            this.seatnumDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.seatnumDataGridViewTextBoxColumn.Name = "seatnumDataGridViewTextBoxColumn";
+            this.seatnumDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // pCUserBindingSource
+            // 
+            this.pCUserBindingSource.DataSource = typeof(MyPCRoom.PC_User);
             // 
             // label2
             // 
@@ -163,58 +215,6 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // useridDataGridViewTextBoxColumn
-            // 
-            this.useridDataGridViewTextBoxColumn.DataPropertyName = "User_id";
-            this.useridDataGridViewTextBoxColumn.HeaderText = "User_id";
-            this.useridDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.useridDataGridViewTextBoxColumn.Name = "useridDataGridViewTextBoxColumn";
-            this.useridDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // usingstatusDataGridViewTextBoxColumn
-            // 
-            this.usingstatusDataGridViewTextBoxColumn.DataPropertyName = "Using_status";
-            this.usingstatusDataGridViewTextBoxColumn.HeaderText = "Using_status";
-            this.usingstatusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.usingstatusDataGridViewTextBoxColumn.Name = "usingstatusDataGridViewTextBoxColumn";
-            this.usingstatusDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // starttimeDataGridViewTextBoxColumn
-            // 
-            this.starttimeDataGridViewTextBoxColumn.DataPropertyName = "Start_time";
-            this.starttimeDataGridViewTextBoxColumn.HeaderText = "Start_time";
-            this.starttimeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.starttimeDataGridViewTextBoxColumn.Name = "starttimeDataGridViewTextBoxColumn";
-            this.starttimeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // latetimeDataGridViewTextBoxColumn
-            // 
-            this.latetimeDataGridViewTextBoxColumn.DataPropertyName = "Late_time";
-            this.latetimeDataGridViewTextBoxColumn.HeaderText = "Late_time";
-            this.latetimeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.latetimeDataGridViewTextBoxColumn.Name = "latetimeDataGridViewTextBoxColumn";
-            this.latetimeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // seatnumDataGridViewTextBoxColumn
-            // 
-            this.seatnumDataGridViewTextBoxColumn.DataPropertyName = "Seat_num";
-            this.seatnumDataGridViewTextBoxColumn.HeaderText = "Seat_num";
-            this.seatnumDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.seatnumDataGridViewTextBoxColumn.Name = "seatnumDataGridViewTextBoxColumn";
-            this.seatnumDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pCUserBindingSource
-            // 
-            this.pCUserBindingSource.DataSource = typeof(MyPCRoom.PC_User);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
@@ -231,7 +231,7 @@
             this.panel2.Size = new System.Drawing.Size(211, 1);
             this.panel2.TabIndex = 11;
             // 
-            // Form4
+            // User_Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -250,9 +250,9 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form4";
+            this.Name = "User_Search";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form4";
+            this.Text = "회원조회";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCUserBindingSource)).EndInit();
             this.ResumeLayout(false);

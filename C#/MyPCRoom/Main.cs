@@ -23,10 +23,6 @@ namespace MyPCRoom
         public Main()
         {
             InitializeComponent();
-            //timer1.Enabled = true;
-            
-           
-
             Timers.Add(timer1);
             Timers.Add(timer2);
             Timers.Add(timer3);
@@ -49,7 +45,7 @@ namespace MyPCRoom
             Timers.Add(timer20);
             Timers.Add(timer21);
             Timers.Add(timer22);
-            //
+
             countLabel.Text = "";
             pcNumberLabel.Text = "";
             statusLabel.Text = "";
@@ -62,37 +58,28 @@ namespace MyPCRoom
             {
                 foreach (var item in panel1.Controls)
                 {
-
                     if (item is Button)
                     {
-
                         Button btn = item as Button;
                         string[] a = btn.Name.Split('n');
                         int num;
                         int.TryParse(a[1], out num);
-                        //btn.Name = "Seat_" + num.ToString();
                         btn.Text = num.ToString() + "번";
                         Btn_panel.Add(btn);
                     }
-
                 }
-
                 SortedButton = Btn_panel.OrderBy(x => int.Parse(x.Name.Split('n')[1])).ToList();
-                //MessageBox.Show(SortedButton[0].Text);
             }
             catch (Exception e)
             {
                 MessageBox.Show("오류남");
                 MessageBox.Show(e.Message);
                 MessageBox.Show(e.StackTrace);
-
             }
             Refresh_btn();
-            //int second1 = 0;
-
-
-
-            Form2.SortedButton = SortedButton;
+            Time_Add.SortedButton = SortedButton;
+            Move_seat.SortedButton = SortedButton;
+            Move_seat.Timers = Timers;
         }
 
         public void Refresh_btn()
@@ -109,7 +96,6 @@ namespace MyPCRoom
                             {
                                 Button button = btn as Button;
                                 string[] seat = button.Name.Split('n');
-                                //MessageBox.Show(item.Seat_num);
                                 if (item.Seat_num == seat[1])
                                 {
                                     button.BackColor = Color.GreenYellow;
@@ -123,13 +109,9 @@ namespace MyPCRoom
                                     minutes = num % 3600 / 60;
                                     seconds = num % 60;
 
-
-
                                     button.Text = $"이름 : {item.Name}\n아이디 : {item.User_id}\n남은시간\n{hours}:{minutes}:{seconds}";
                                     Timers[int.Parse(seat[1]) - 1].Enabled = true;
-                                    
                                 }
-
                             }
                         }
                     }
@@ -149,23 +131,14 @@ namespace MyPCRoom
                                 seat_status = true;
                             }
                         }
-
                         if (!seat_status)
                         {
-                            btn.BackColor = Color.Gray;
-                            btn.ForeColor = Color.White;
+                            btn.BackColor = Color.Gainsboro;
+                            btn.ForeColor = Color.Black;
                             btn.Text = btn.Name.Split('n')[1] + "번컴퓨터";
                         }
-
                     }
-
-
                 }
-
-
-
-
-
             }
             catch (Exception e)
             {
@@ -174,23 +147,14 @@ namespace MyPCRoom
                 MessageBox.Show(e.StackTrace);
             }
         }
-
-
         public string text_call(int num)
         {
             return SortedButton[num].Text;
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
-
-
             time_display(1);
-
         }
-
-
-
-
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -200,21 +164,21 @@ namespace MyPCRoom
 
         private void button22_Click(object sender, EventArgs e)
         {
-            // 시간 추가 (add_time)
-            Form2 newform = new Form2(this);
+            // 시간 추가
+            Time_Add newform = new Time_Add(this);
             newform.ShowDialog();
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
             // 회원추가  
-            Form3 newform = new Form3();
+            User_Control newform = new User_Control();
             newform.ShowDialog();
         }
 
         private void button22_Click_1(object sender, EventArgs e)
         {
-            // 사용종료 //
+            // 사용종료
             string late_time;
             string[] text;
             int realtime;
@@ -223,7 +187,6 @@ namespace MyPCRoom
                 PC_User user = DataManager.Users.Single(x => x.User_id == userIdLabel.Text);
                 late_time = remainingTimeLabel.Text; // 0:0:5 > 5
 
-                //
                 text = late_time.Split(':');
 
                 int.TryParse(text[0], out hours);
@@ -234,81 +197,56 @@ namespace MyPCRoom
 
                 Timers[int.Parse(user.Seat_num) - 1].Enabled = false;
                 Timers[21].Enabled = false;
-                SortedButton[int.Parse(user.Seat_num) - 1].BackColor = Color.Gray;
+                SortedButton[int.Parse(user.Seat_num) - 1].BackColor = Color.Gainsboro;
 
                 DBHelper.db_save_quite(user.User_id, realtime.ToString());
-
-
-                //MessageBox.Show("쿼리문실행");
                 Current_userinfo_save();
                 DataManager.Load();
                 Refresh_btn();
-
-
-
-
-                MessageBox.Show(" 남은 시간 : " + realtime.ToString());
+                MessageBox.Show(" 남은 시간 : " + realtime.ToString() + "초");
                 MessageBox.Show($"아이디 : '{user.User_id}', 이름 : '{user.Name}' 회원의 사용이 종료되었습니다.");
             }
             catch (Exception ee)
             {
                 MessageBox.Show(ee.Message + " Form1.button22_click_1 error");
             }
-
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
-            DataManager.Load();
             // 회원 조회
-            Form4 newform = new Form4();
+            DataManager.Load();
+            User_Search newform = new User_Search();
             newform.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             on_off(sender, e);
-
         }
-        // 이 기능들을 함수로 만들어서 필요할 때 호출하는 식으로 변경하기
-        // 빨간색일 때
 
         private void on_off(object sender, EventArgs e)
         {
-            //click_status(sender, e);
-
             Button button = sender as Button;
             countLabel.Text = "";
             countLabel.Text = button.Name.Split('n')[1] + "번컴퓨터";
             string seat = button.Name.Split('n')[1];
 
-
             pcNumberLabel.Text = button.Name.Split('n')[1] + "번컴퓨터";
 
             foreach (var item in DataManager.Users)
             {
-                if(item.Seat_num == seat)
+                if (item.Seat_num == seat)
                 {
                     statusLabel.Text = "ON";
                     userIdLabel.Text = item.User_id.ToString();
                     User_Name.Text = item.Name;
                     loggedInTimeLabel.Text = item.Start_time.ToString();
                     remainingTimeLabel.Text = SortedButton[int.Parse(seat) - 1].Text.Split('\n')[3];
-                    
                     seat_num = int.Parse(seat);
                     timer22.Enabled = true;
-
                     goto A;
                 }
-                //else
-                //{
-                //    userIdLabel.Text = "";
-                //    User_Name.Text = "";
-                //    loggedInTimeLabel.Text = "";
-                //    usedTimeLabel.Text = "";
-                //    remainingTimeLabel.Text = "";
-                //}
             }
             statusLabel.Text = "OFF";
             userIdLabel.Text = "";
@@ -317,23 +255,18 @@ namespace MyPCRoom
             remainingTimeLabel.Text = "";
             timer22.Enabled = false;
         A:;
-
-
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
             // 지도
-            Form5 newform = new Form5();
+            Map newform = new Map();
             newform.ShowDialog();
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-
             time_display(2);
-
-            //btn.Text = num.ToString();
         }
 
         private void timer3_Tick(object sender, EventArgs e)
@@ -425,24 +358,18 @@ namespace MyPCRoom
         {
             time_display(20);
         }
-
         private void timer21_Tick(object sender, EventArgs e)
         {
-            //int n = int.Parse(this.Name.Substring(5, 2));
             time_display(21);
         }
 
-
         public void time_display(int n)
         {
-            string[] time = (SortedButton[n-1].Text).Split('\n');
-
+            string[] time = (SortedButton[n - 1].Text).Split('\n');
             int.TryParse(time[3], out int num);
-
             int.TryParse(time[3].Split(':')[0], out int hours);
             int.TryParse(time[3].Split(':')[1], out int minutes);
             int.TryParse(time[3].Split(':')[2], out int seconds);
-            //num--;
             seconds--;
 
             if (seconds < 0)
@@ -457,19 +384,17 @@ namespace MyPCRoom
                 hours--;
             }
 
-            SortedButton[n-1].Text = $"{time[0]}\n{time[1]}\n남은시간\n{hours}:{minutes}:{seconds}";
+            SortedButton[n - 1].Text = $"{time[0]}\n{time[1]}\n남은시간\n{hours}:{minutes}:{seconds}";
 
-            if(hours == 0 && minutes == 0 && seconds == 0 || hours<0)
+            if (hours == 0 && minutes == 0 && seconds == 0 || hours < 0)
             {
                 foreach (var item in DataManager.Users)
                 {
-                    if(item.Seat_num == n.ToString())
+                    if (item.Seat_num == n.ToString())
                     {
-                        //MessageBox.Show("이것은 0초");
                         DBHelper.Update_Time(item.User_id, "", "0", "OFF");
-                        SortedButton[n - 1].BackColor = Color.Gray;
-                        Timers[n-1].Enabled = false;
-                        //MessageBox.Show("쿼리문실행");
+                        SortedButton[n - 1].BackColor = Color.Gainsboro;
+                        Timers[n - 1].Enabled = false;
                         Current_userinfo_save();
                         DataManager.Load();
                         Refresh_btn();
@@ -477,27 +402,32 @@ namespace MyPCRoom
                     }
                 }
             }
-
-
-
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
             seat_num = int.Parse(pcNumberLabel.Text.Split('번')[0]);
-
-            if(Timers[seat_num - 1].Enabled == false)
+            if (statusLabel.Text == "ON")
             {
-                SortedButton[seat_num-1].BackColor= Color.GreenYellow;
-                SortedButton[seat_num-1].ForeColor= Color.Black;
-            Timers[seat_num-1].Enabled = true;
-
-            }
-            else
-            {
-                SortedButton[seat_num - 1].BackColor = Color.LightPink;
-                SortedButton[seat_num - 1].ForeColor = Color.Yellow;
-                Timers[seat_num-1].Enabled = false;
+                try
+                {
+                    if (Timers[seat_num - 1].Enabled == false)
+                    {
+                        SortedButton[seat_num - 1].BackColor = Color.GreenYellow;
+                        SortedButton[seat_num - 1].ForeColor = Color.Black;
+                        Timers[seat_num - 1].Enabled = true;
+                    }
+                    else
+                    {
+                        SortedButton[seat_num - 1].BackColor = Color.LightPink;
+                        SortedButton[seat_num - 1].ForeColor = Color.Black;
+                        Timers[seat_num - 1].Enabled = false;
+                    }
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
             }
         }
 
@@ -505,25 +435,23 @@ namespace MyPCRoom
         {
             remainingTimeLabel.Text = SortedButton[seat_num - 1].Text.Split('\n')[3];
         }
-
         public void Current_userinfo_save()
         {
             foreach (var item in panel1.Controls)
             {
-                if(item is Button)
+                if (item is Button)
                 {
                     Button btn = item as Button;
-                    if(btn.BackColor == Color.GreenYellow)
+                    if (btn.BackColor == Color.GreenYellow)
                     {
                         string seat = (btn.Name.Split('n')[1]);
                         foreach (var users in DataManager.Users)
                         {
-                            if(users.Seat_num == seat)
+                            if (users.Seat_num == seat)
                             {
-                                string[] time = (SortedButton[int.Parse(seat)-1].Text).Split('\n');
+                                string[] time = (SortedButton[int.Parse(seat) - 1].Text).Split('\n');
 
                                 int.TryParse(time[3], out int num);
-
                                 int.TryParse(time[3].Split(':')[0], out int hours);
                                 int.TryParse(time[3].Split(':')[1], out int minutes);
                                 int.TryParse(time[3].Split(':')[2], out int seconds);
@@ -532,11 +460,7 @@ namespace MyPCRoom
                                 DBHelper.Update_Time(users.User_id, users.Seat_num, realtime.ToString(), "ON");
                             }
                         }
-
-
-
                     }
-
                 }
             }
         }
@@ -546,10 +470,9 @@ namespace MyPCRoom
             Current_userinfo_save();
         }
 
-   
         private void 지도ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form5 newform = new Form5();
+            Map newform = new Map();
             newform.ShowDialog();
         }
 
@@ -561,8 +484,27 @@ namespace MyPCRoom
 
         private void 월별날씨ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-              Weather weather = new Weather();
-              weather.ShowDialog();
+            Weather weather = new Weather();
+            weather.ShowDialog();
+        }
+
+        private void Move_Seat_Click(object sender, EventArgs e)
+        {
+            Current_userinfo_save();
+            Move_seat move = new Move_seat();
+            move.ShowDialog();
+        }
+
+        private void info_clear_Click(object sender, EventArgs e)
+        {
+            countLabel.Text = "";
+            pcNumberLabel.Text = "";
+            statusLabel.Text = "";
+            userIdLabel.Text = "";
+            User_Name.Text = "";
+            loggedInTimeLabel.Text = "";
+            remainingTimeLabel.Text = "";
+            timer22.Enabled = false;
         }
     }
 }

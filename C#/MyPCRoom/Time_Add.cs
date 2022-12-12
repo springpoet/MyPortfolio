@@ -10,32 +10,31 @@ using System.Windows.Forms;
 
 namespace MyPCRoom
 {
-    public partial class Form2 : Form
+    public partial class Time_Add : Form
     {
-        //Main form = new Main();
         public static List<Button> SortedButton = new List<Button>();
         Main form1;
-        public Form2(Main form)
+        public Time_Add(Main form)
         {
             InitializeComponent();
             form1 = form;
-            //MessageBox.Show(SortedButton[0].Text);
-            //MessageBox.Show(SortedButton[1].Text);
             textBox1.Text = form1.userIdLabel.Text;
             textBox2.Text = form1.User_Name.Text;
-
             textBox3.Text = form1.pcNumberLabel.Text.Split('번')[0];
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Boolean seat_duplicate = int.TryParse(textBox3.Text, out int num);
+            if (textBox3.Text == "")
+            {
+                seat_duplicate = true;
+            }
             if (!seat_duplicate)
             {
                 MessageBox.Show("자리번호는 숫자만 가능합니다.");
                 return;
             }
-            //MessageBox.Show(SortedButton[1].Text);
             int hours;
             int minutes;
             int seconds;
@@ -45,18 +44,17 @@ namespace MyPCRoom
 
             try
             {
-                
                 if (textBox1.Text == "")
                 {
                     MessageBox.Show("아이디를 입력하세요");
                     return;
                 }
-                else if (textBox3.Text == "" && textBox4.Text =="" )
+                else if (textBox3.Text == "" && textBox4.Text == "")
                 {
                     MessageBox.Show("좌석번호 / 시간을 입력하세요");
                     return;
                 }
-                else if( num > 21)
+                else if (num > 21)
                 {
                     MessageBox.Show("없는 좌석입니다");
                     return;
@@ -64,30 +62,29 @@ namespace MyPCRoom
 
                 foreach (var item in DataManager.Users)
                 {
-                    if(item.Using_status == "ON")
+                    if (item.Using_status == "ON")
                     {
-                        if(textBox3.Text == item.Seat_num && textBox4.Text == "")
+                        if (textBox3.Text == item.Seat_num && textBox4.Text == "")
                         {
                             MessageBox.Show("이미 사용중인 좌석입니다.");
                             return;
                         }
                     }
                 }
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + " button1_Click error ");
             }
 
-
-            if(textBox3.Text == "")
+            if (textBox3.Text == "")
             {
                 DBHelper.addTime(textBox1.Text, textBox4.Text);
             }
 
             //시간 추가 없이 바로 로그인 할 때
-            else if(textBox2.Text=="" && textBox4.Text=="") {
+            else if (textBox2.Text == "" && textBox4.Text == "")
+            {
                 try
                 {
                     PC_User user = DataManager.Users.Single(x => x.User_id == textBox1.Text);
@@ -105,54 +102,31 @@ namespace MyPCRoom
             }
             else
             {
-                foreach(var item in DataManager.Users)
+                foreach (var item in DataManager.Users)
                 {
-                    if(item.Seat_num == textBox3.Text && item.Using_status == "ON")
+                    if (item.Seat_num == textBox3.Text && item.Using_status == "ON")
                     {
-
-                        text = SortedButton[int.Parse(item.Seat_num)-1].Text;
-                        
-                        //text = form.text_call(int.Parse(item.Seat_num));
-
-                        //MessageBox.Show(text);
+                        text = SortedButton[int.Parse(item.Seat_num) - 1].Text;
                         time = (text).Split('\n');
 
                         int.TryParse(time[3].Split(':')[0], out hours);
 
                         int.TryParse(time[3].Split(':')[1], out minutes);
                         int.TryParse(time[3].Split(':')[2], out seconds);
-                        //MessageBox.Show(hours.ToString()+"시간" + minutes.ToString() +"분" + seconds.ToString() + "초");
-                        //MessageBox.Show(minutes.ToString());
-                        //MessageBox.Show(seconds.ToString());
-
                         realtime = hours * 3600 + minutes * 60 + seconds + int.Parse(textBox4.Text);
 
                         MessageBox.Show(realtime.ToString());
                         DBHelper.addTime(textBox1.Text, textBox3.Text, realtime.ToString());
 
                         hours = realtime / 3600;
-                        minutes = realtime %3600 / 60;
+                        minutes = realtime % 3600 / 60;
 
                         seconds = realtime % 60;
 
                         SortedButton[int.Parse(item.Seat_num) - 1].Text = $"{time[0]}\n{time[1]}\n남은시간\n{hours}:{minutes}:{seconds}";
                     }
-                    else
-                    {
-
-                    }
-
-
                 }
-
-     
             }
-
-
-        
-        
         }
-
-
     }
 }

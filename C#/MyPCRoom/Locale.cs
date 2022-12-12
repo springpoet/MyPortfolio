@@ -21,7 +21,7 @@ namespace MyPCRoom
 
         public override string ToString()
         {
-            return name;
+            return name; // string으로 변환 시 이름만 리턴
         }
     }
 }

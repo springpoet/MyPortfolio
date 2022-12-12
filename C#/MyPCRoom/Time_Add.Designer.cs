@@ -1,6 +1,6 @@
 ﻿namespace MyPCRoom
 {
-    partial class Form2
+    partial class Time_Add
     {
         /// <summary>
         /// Required designer variable.
@@ -188,7 +188,7 @@
             this.panel4.Size = new System.Drawing.Size(211, 1);
             this.panel4.TabIndex = 2;
             // 
-            // Form2
+            // Time_Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -211,9 +211,10 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form2";
+            this.Name = "Time_Add";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Tag = "";
+            this.Text = "로그인/시간추가";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,6 +1,6 @@
 ﻿namespace MyPCRoom
 {
-    partial class Form5
+    partial class Map
     {
         /// <summary>
         /// Required designer variable.
@@ -75,7 +75,7 @@
             this.webBrowser1.TabIndex = 3;
             this.webBrowser1.Url = new System.Uri("https://ahnseojun.github.io/maphosting/", System.UriKind.Absolute);
             // 
-            // Form5
+            // Map
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -87,9 +87,9 @@
             this.Controls.Add(this.listBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form5";
+            this.Name = "Map";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form5";
+            this.Text = "지도";
             this.ResumeLayout(false);
             this.PerformLayout();
 

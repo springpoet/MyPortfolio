@@ -11,18 +11,17 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MyPCRoom
 {
-    public partial class Form3 : Form
+    public partial class User_Control : Form
     {
-    public static Boolean Name_duplicate = false;
-        public Form3()
+        public static Boolean Name_duplicate = false;
+        public User_Control()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //form3 _ 회원등록
-
+            //회원등록
             if (textBox1.Text == "")
                 MessageBox.Show("id를 입력하세요");
             else if (textBox2.Text == "")
@@ -34,12 +33,10 @@ namespace MyPCRoom
             }
         }
 
-
         private void button2_Click(object sender, EventArgs e)
         {
             // 중복체크
-
-            if(textBox1.Text=="")
+            if (textBox1.Text == "")
             {
                 MessageBox.Show("아이디를 입력해주세요");
                 return;
@@ -49,24 +46,22 @@ namespace MyPCRoom
                 MessageBox.Show("이름을 입력해주세요");
                 return;
             }
-
             try
             {
                 PC_User user = DataManager.Users.Single(x => x.User_id == textBox1.Text);
                 if (user.User_id.Trim() != "")
                 {
-                    button1.Enabled= false;
+                    button1.Enabled = false;
                     MessageBox.Show("이미 사용중인 아이디입니다.");
                 }
             }
             catch (Exception)
             {
-                Name_duplicate= true;
-                button1.Enabled= true;
+                Name_duplicate = true;
+                button1.Enabled = true;
                 MessageBox.Show("사용 가능한 아이디입니다.");
             }
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             try

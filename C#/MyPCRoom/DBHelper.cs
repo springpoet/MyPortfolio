@@ -33,6 +33,16 @@ namespace MyPCRoom
                 Console.WriteLine(ex);
                 Console.WriteLine("connect Fail");
             }
+            // Local일 경우 ------- table명 변경 --------
+
+            //string dataSource = "local";
+            //string db = "MYDB";
+            //string security = "SSPI";
+            //conn.ConnectionString = string.Format("Data Source=({0}); initial Catalog={1};" +
+            //    "integrated Security = {2}; Timeout = 3", dataSource, db, security);
+
+            //conn = new SqlConnection(conn.ConnectionString);
+            //conn.Open();
         }
 
         public static void selectQuery()
@@ -43,7 +53,6 @@ namespace MyPCRoom
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = "select * from PCRoom";
-
                 da = new SqlDataAdapter(cmd);
                 ds = new DataSet();
                 da.Fill(ds, "PCRoom");
@@ -53,11 +62,10 @@ namespace MyPCRoom
             {
                 System.Windows.Forms.MessageBox.Show(e.Message + "select");
                 return;
-
             }
             finally
             {
-                conn.Close(); // DB연결 해제
+                conn.Close();
             }
         }
 
@@ -65,6 +73,7 @@ namespace MyPCRoom
         {
             string sqlcommand = "";
             sqlcommand = "insert into PCRoom(user_id, name) values (@p1,@p2)";
+
             try
             {
                 ConnectDB();
@@ -73,12 +82,12 @@ namespace MyPCRoom
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@p1", user_id);
                 cmd.Parameters.AddWithValue("@p2", user_name);
+
                 cmd.CommandText = sqlcommand;
                 cmd.ExecuteNonQuery();
             }
             catch (Exception e)
             {
-                System.Windows.Forms.MessageBox.Show(e.Message+" DBHelper.userAddQuery error.");
             }
             finally
             {
@@ -92,14 +101,17 @@ namespace MyPCRoom
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandType = CommandType.Text;
+
             string sqlcommand = "";
             try
             {
                 sqlcommand = "update PCRoom set Seat_num=@p3, Late_time = @p4, Start_Time = @p5, Using_Status ='ON' where user_id=@p6";
+
                 cmd.Parameters.AddWithValue("@p3", seat_num);
                 cmd.Parameters.AddWithValue("@p4", time);
                 cmd.Parameters.AddWithValue("@p5", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                 cmd.Parameters.AddWithValue("@p6", user_id);
+
                 cmd.CommandText = sqlcommand;
                 cmd.ExecuteNonQuery();
             }
@@ -110,7 +122,6 @@ namespace MyPCRoom
             finally
             {
                 conn.Close();
-                System.Windows.Forms.MessageBox.Show("실해으");
             }
         }
 
@@ -120,21 +131,24 @@ namespace MyPCRoom
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandType = CommandType.Text;
+
             string sqlcommand = "";
             if (status == "ON")
             {
+
+
                 try
                 {
                     sqlcommand = "update PCRoom set Seat_num=@p3, Late_time = @p4, Using_Status ='ON' where user_id=@p6";
                     cmd.Parameters.AddWithValue("@p3", seat_num);
                     cmd.Parameters.AddWithValue("@p4", time);
                     cmd.Parameters.AddWithValue("@p6", user_id);
+
                     cmd.CommandText = sqlcommand;
                     cmd.ExecuteNonQuery();
                 }
                 catch (Exception ex)
                 {
-
                     System.Windows.Forms.MessageBox.Show(ex.Message);
                 }
                 finally
@@ -144,12 +158,14 @@ namespace MyPCRoom
             }
             else if (status == "OFF")
             {
+
                 try
                 {
                     sqlcommand = "update PCRoom set Seat_num=@p3, Late_time = @p4, Using_Status ='OFF' where user_id=@p6";
                     cmd.Parameters.AddWithValue("@p3", seat_num);
                     cmd.Parameters.AddWithValue("@p4", time);
                     cmd.Parameters.AddWithValue("@p6", user_id);
+
                     cmd.CommandText = sqlcommand;
                     cmd.ExecuteNonQuery();
                 }
@@ -161,6 +177,33 @@ namespace MyPCRoom
                 {
                     conn.Close();
                 }
+            }
+        }
+
+        public static void Moveseat(int current, int move)
+        {
+            ConnectDB();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.Text;
+            string sqlcommand = "";
+
+            try
+            {
+                sqlcommand = "update PCRoom set Seat_num=@p2 where Seat_num=@p1";
+                cmd.Parameters.AddWithValue("@p1", current.ToString());
+                cmd.Parameters.AddWithValue("@p2", move.ToString());
+
+                cmd.CommandText = sqlcommand;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
             }
         }
 
@@ -187,12 +230,15 @@ namespace MyPCRoom
                     System.Windows.Forms.MessageBox.Show(time_1.ToString());
                 }
             }
+
             try
             {
                 sqlcommand = "update PCRoom set Late_time = @p4, Start_Time = @p5 where user_id=@p6";
+
                 cmd.Parameters.AddWithValue("@p4", time_1);
                 cmd.Parameters.AddWithValue("@p5", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                 cmd.Parameters.AddWithValue("@p6", user_id);
+
                 cmd.CommandText = sqlcommand;
                 cmd.ExecuteNonQuery();
             }
@@ -206,11 +252,12 @@ namespace MyPCRoom
                 System.Windows.Forms.MessageBox.Show("실해으");
             }
         }
-    
+
         public static void userDeleteQuery(string user_id)
         {
-            // 유저 삭제 코드
+            // 유저 삭제
             string sqlcommand = "";
+
             sqlcommand = "delete from PCRoom where user_id=@p1";
             try
             {
@@ -219,6 +266,7 @@ namespace MyPCRoom
                 cmd.Connection = conn;
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@p1", user_id);
+
                 cmd.CommandText = sqlcommand;
                 cmd.ExecuteNonQuery();
             }
@@ -232,15 +280,16 @@ namespace MyPCRoom
             }
         }
 
-        // user_id로 찾기
         public static void searchIdQuery(string user_id)
         {
+            // user_id로 찾기
             try
             {
-                ConnectDB(); 
+                ConnectDB();
                 SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn; 
+                cmd.Connection = conn;
                 cmd.CommandText = "select * from PCRoom where User_id=@p1";
+
                 cmd.Parameters.AddWithValue("@p1", user_id);
                 da = new SqlDataAdapter(cmd);
                 ds = new DataSet();
@@ -254,18 +303,19 @@ namespace MyPCRoom
             }
             finally
             {
-                conn.Close(); 
+                conn.Close();
             }
-
         }
+
         public static void searchNameQuery(string Name)
         {
             try
             {
-                ConnectDB(); 
+                ConnectDB();
                 SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn; 
+                cmd.Connection = conn;
                 cmd.CommandText = "select * from PCRoom where Name=@p1";
+
                 cmd.Parameters.AddWithValue("@p1", Name);
                 da = new SqlDataAdapter(cmd);
                 ds = new DataSet();
@@ -279,7 +329,7 @@ namespace MyPCRoom
             }
             finally
             {
-                conn.Close(); 
+                conn.Close();
             }
         }
 
@@ -290,7 +340,9 @@ namespace MyPCRoom
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandType = CommandType.Text;
+
             string sqlcommand = "";
+
             try
             {
                 sqlcommand = "update PCRoom set Late_time=@p1, Using_status='OFF', Seat_num='', start_time = NULL where User_id=@p2";
@@ -311,10 +363,13 @@ namespace MyPCRoom
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandType = CommandType.Text;
+
             string sqlcommand = "";
+
             try
             {
                 sqlcommand = "update PCRoom set Seat_num=@p3, Late_time = @p4, Start_Time = @p5, Using_Status ='ON' where user_id=@p6";
+
                 cmd.CommandText = sqlcommand;
                 cmd.ExecuteNonQuery();
             }
@@ -326,7 +381,6 @@ namespace MyPCRoom
             finally
             {
                 conn.Close();
-                System.Windows.Forms.MessageBox.Show("실행");
             }
         }
 
@@ -336,6 +390,7 @@ namespace MyPCRoom
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandType = CommandType.Text;
+
             string sqlcommand = "";
             try
             {
