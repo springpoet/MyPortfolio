@@ -68,6 +68,7 @@ namespace MyPCRoom
             {
                 PC_User user = DataManager.Users.Single(x => x.User_id == textBox3.Text);
                 DataManager.delete(user.User_id);
+                DataManager.Load();
                 MessageBox.Show($"'{user.User_id}' 회원이 성공적으로 삭제되었습니다.");
             }
             catch (Exception ee)

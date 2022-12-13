@@ -15,54 +15,20 @@ namespace MyPCRoom
         public static List<Button> SortedButton = new List<Button>();
         public static List<Timer> Timers = new List<Timer>();
         Main form1;
-        public Move_seat()
+        public Move_seat(Main form)
         {
             InitializeComponent();
+            form1 = form;
         }
 
         private void move_button_Click(object sender, EventArgs e)
         {
             try
             {
+                int current = int.Parse(textBox1.Text);
+                int moveseat = int.Parse(textBox2.Text);
 
-                Boolean c = int.TryParse(textBox1.Text, out int current);
-                Boolean m = int.TryParse(textBox2.Text, out int moveseat);
-
-                
-                if(!(c && m))
-                {
-                    MessageBox.Show("현재자리는 숫자로 입력해야합니다.");
-                    textBox1.Text = "";
-                    textBox2.Text = "";
-                    return;
-                }
-
-                else if(current > 21 || moveseat > 21)
-                {
-                    MessageBox.Show("좌석은 21번 까지 입력해야합니다.");
-                    textBox1.Text = "";
-                    textBox2.Text = "";
-                    return;
-                }
-
-                else if (SortedButton[current-1].BackColor == Color.Gainsboro)
-                {
-                    MessageBox.Show("현재자리가 사용중이지않습니다.");
-                    textBox1.Text = "";
-
-                    return;
-                }
-                else if (SortedButton[moveseat - 1].BackColor == Color.GreenYellow)
-                {
-                    MessageBox.Show("변경하실위치는 이미 사용중인 PC입니다.");
-                    
-                    textBox2.Text = "";
-                    return;
-                }
-
-
-
-                    SortedButton[moveseat - 1].Text = SortedButton[current - 1].Text;
+                SortedButton[moveseat - 1].Text = SortedButton[current - 1].Text;
                 SortedButton[current - 1].Text = current + "번컴퓨터";
 
                 SortedButton[moveseat - 1].BackColor = Color.GreenYellow;
@@ -70,9 +36,12 @@ namespace MyPCRoom
 
                 Timers[current - 1].Enabled = false;
                 Timers[moveseat - 1].Enabled = true;
+                Timers[21].Enabled = false;
 
                 DBHelper.Moveseat(current, moveseat);
-                Dispose();
+                DataManager.Load();
+                form1.Current_userinfo_save();
+                form1.Refresh_btn();
             }
             catch (Exception ex)
             {

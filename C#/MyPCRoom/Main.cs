@@ -165,6 +165,7 @@ namespace MyPCRoom
         private void button22_Click(object sender, EventArgs e)
         {
             // 시간 추가
+            DataManager.Load();
             Time_Add newform = new Time_Add(this);
             newform.ShowDialog();
         }
@@ -172,6 +173,7 @@ namespace MyPCRoom
         private void button23_Click(object sender, EventArgs e)
         {
             // 회원추가  
+            DataManager.Load();
             User_Control newform = new User_Control();
             newform.ShowDialog();
         }
@@ -433,7 +435,16 @@ namespace MyPCRoom
 
         private void timer22_Tick(object sender, EventArgs e)
         {
-            remainingTimeLabel.Text = SortedButton[seat_num - 1].Text.Split('\n')[3];
+            try
+            {
+                remainingTimeLabel.Text = SortedButton[seat_num - 1].Text.Split('\n')[3];
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
         public void Current_userinfo_save()
         {
@@ -491,7 +502,7 @@ namespace MyPCRoom
         private void Move_Seat_Click(object sender, EventArgs e)
         {
             Current_userinfo_save();
-            Move_seat move = new Move_seat();
+            Move_seat move = new Move_seat(this);
             move.ShowDialog();
         }
 

@@ -72,7 +72,7 @@ namespace MyPCRoom
         public static void userAddQuery(string user_id, string user_name)
         {
             string sqlcommand = "";
-            sqlcommand = "insert into PCRoom(user_id, name) values (@p1,@p2)";
+            sqlcommand = "insert into PCRoom(user_id, name,using_status) values (@p1,@p2,'OFF')";
 
             try
             {
@@ -135,7 +135,6 @@ namespace MyPCRoom
             string sqlcommand = "";
             if (status == "ON")
             {
-
 
                 try
                 {
@@ -249,7 +248,6 @@ namespace MyPCRoom
             finally
             {
                 conn.Close();
-                System.Windows.Forms.MessageBox.Show("실해으");
             }
         }
 

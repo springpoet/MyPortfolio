@@ -83,7 +83,7 @@ namespace MyPCRoom
             }
 
             //시간 추가 없이 바로 로그인 할 때
-            else if (textBox2.Text == "" && textBox4.Text == "")
+            else if (textBox4.Text == "")
             {
                 try
                 {
